@@ -1,0 +1,18 @@
+Implementasi PAAS:
+1. Buka website heroku https://www.heroku.com/. Kemudian buat akun baru.
+2. Setelah selesai pilih project yang akan di buat, Contoh : PHP
+3. Download heroku cli untuk Windows karena saya menggunakan windows, untuk deployment membutuhkan cli dari heroku.
+4. Setelah selesai install heroku cli, login dengan akun yang telah dibuat tadi dengan menggunakan perintah :
+   heroku login
+   Dan masukkan email dan passwordmu
+5. Install Php terlebih dahulu jika belum di php.net
+6. Install Composer juga di https://getcomposer.org/download/
+7. Masukkan perintah berikut untuk melakukan git clone dari git hub
+   git clone https://github.com/BOTANG/TCC
+   Setelah selesai melakukan proses clone pindah directory dengan menggetikkan perintah :
+   cd TCC
+10. Langkah selanjutnya adalah deploy aplikasi dengan perintah:
+    heroku create
+    git push heroku master
+    heroku ps:scale web=1
+    heroku open
